@@ -1,0 +1,44 @@
+.separator-color-1 {
+    height: 15px;
+    background-color: #69b60c;
+}
+
+.separator-color-2 {
+    height: 15px;
+    background-color: #202020;
+}
+
+.separator-container {
+    display: grid;
+    max-height: 15px;
+    grid-area: separator;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.separator-container-2 {
+    display: grid;
+    max-height: 15px;
+    grid-area: separator-2;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.separator-container-3{
+    display: grid;
+    max-height: 15px;
+    grid-area: separator-3;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.separator-container-4 {
+    display: grid;
+    max-height: 15px;
+    grid-area: separator-4;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.separator-container-5 {
+    display: grid;
+    max-height: 15px;
+    grid-area: separator-5;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}

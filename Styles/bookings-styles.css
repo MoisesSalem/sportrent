@@ -1,0 +1,183 @@
+body {
+    background-color: #ffffff;
+    /* Background estándar de la página */
+    margin: 0;
+    /* Elimino el margen y padding que viene por defecto en el navegador */
+    padding: 0;
+}
+
+.principal-container {
+    display: grid;
+    grid-template-areas: 
+        'menu menu menu'
+        'banner banner banner'
+        'separator separator separator'
+        'weather weather weather'
+        'bookings-cards bookings-cards bookings-cards'
+        'separator-2 separator-2 separator-2'
+        'footer footer footer';
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+}
+
+
+
+.banner-container {
+    display: flex;
+    flex-direction: column;
+    flex-flow: column-reverse;
+    grid-area: banner;
+    height: 656px;
+    background-image: url(Styles-Images/bookings-banner.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.banner-title-container {
+    font-size: 90px;
+    color: #ffffff;
+    text-align: left;
+    padding-left: 40px;
+    margin-bottom: -50px;
+    letter-spacing: 5px;
+
+}
+
+.weather-status-container{
+    grid-area: weather;
+    background-color: #665f5f;
+    height: 450px;
+}
+
+.weather-icon-container{
+    color: #5d941a;
+    margin-top: 0px;
+    align-items: center;
+    text-align: center;
+}
+
+.weather-icon{
+    margin-top: 50px;
+}
+
+.weather-city-name-container{
+    color:#ffffff;
+    text-align: center;
+    align-items: center;
+    font-size: 50px;
+    margin-top: -20px;
+}
+
+.weather-temp-container{
+    color:#ffffff;
+    text-align: center;
+    align-items: center;
+    font-size: 50px;
+    margin-top: -20px;
+}
+
+.bookings-cards-container {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    background-color: #88c140;
+}
+
+.bookings-list-container {
+    grid-area: bookings-cards;
+}
+
+.bookings-card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card-picture-1-container {
+    height: 400px;
+    background-image: url(Styles-Images/la-san-juan-futbol-5.JPG);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.card-picture-2-container {
+    height: 400px;
+    background-image: url(Styles-Images/la-cañada-futbol-5.JPG);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.card-picture-3-container {
+    height: 400px;
+    background-image: url(Styles-Images/club-las-lomitas.JPG);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.card-description-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #333333;
+}
+
+.card-description-title-container {
+    color: #ffffff;
+    font-size: 30px;
+}
+
+.card-description-rate-container {
+    display: flex;
+}
+
+.card-description-sports-container {
+    color: #ffffff;
+    font-size: 25px;
+}
+
+.card-description-phone-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #ffffff;
+    font-size: 30px;
+    margin-top: -30px;
+}
+
+.card-map-button-container {
+    background-color: #5d941a;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.map-container iframe {
+    width: 600px;
+    height: 250px;
+    border-top-right-radius: 20px;
+  }
+.button-container {
+    background-color: #333333;
+    border-radius: 10px;
+}
+
+.button-text-container {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 15px;
+}
+

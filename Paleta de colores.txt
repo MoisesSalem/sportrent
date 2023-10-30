@@ -1,0 +1,3 @@
+Verde menta: #88c140
+Gris oscuro: #333333
+Blanco: #ffffff

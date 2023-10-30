@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/bookings-styles.css">
+    <link rel="stylesheet" href="Styles/footer.css">
+    <link rel="stylesheet" href="Styles/menu.css">
+    <link rel="stylesheet" href="Styles/separator.css">
+    <link rel="stylesheet" href="Styles/fonts.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@500&family=Roboto+Condensed:wght@300&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/37dc15b67f.js" crossorigin="anonymous"></script>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css'>
+    <script src="Scripts/weather-api.js"></script>
+    <title>Reservas</title>
+</head>
+
+<body>
+    <div class="principal-container">
+        <nav>
+            <div class="menu-container">
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fi fi-br-menu-burger"></i>
+                </label>
+                <div class="home-container menu-link">
+                    <div class="home-title-container menu-link">
+                        <p class="title-font"><b><a class="home-title-container" href="index.html">INICIO</a></b></p>
+                    </div>
+                </div>
+                <div class="bookings-container menu-link active">
+                    <div class="bookings-title-container ">
+                        <p class="title-font"><b><a class="bookings-title-container" href="bookings.html">RESERVAS</a></b></p>
+                    </div>
+                </div>
+                <div class="contact-container menu-link">
+                    <div class="contact-title-container">
+                        <p class="title-font"><b><a class="contact-title-container" href="contact.html">CONTACTO</a></b></p>
+                    </div>
+                </div>
+                <div class="about-us-container menu-link">
+                    <div class="about-us-title-container">
+                        <p class="title-font"><b><a class="about-us-title-container" href="about-us.html">SOBRE NOSOTROS</a></b></p>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="banner-container">
+            <div class="banner-title-container">
+                <p class="title-font"><b>Reservas</b></p>
+            </div>
+        </div>
+        <div class="separator-container">
+            <div class="separator-color-1"></div>
+            <div class="separator-color-2"></div>
+            <div class="separator-color-1"></div>
+            <div class="separator-color-2"></div>
+        </div>
+        <div class="weather-status-container">
+            <div class="weather-icon-container">
+                <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="" id="icon-temp" class="weather-icon">
+            </div>
+            <div class="weather-city-name-container">
+                <p class="title-font" id="city-name">Obteniendo ubicación...</p>
+            </div>
+            <div class="weather-temp-container">
+                <p class="text-font" id="temp">Obteniendo temperatura...</p>
+            </div>
+        </div>
+        <div class="bookings-list-container">
+            <div class="bookings-cards-container">
+                <div class="bookings-card-container">
+                    <div class="card-picture-1-container"></div>
+                    <div class="card-description-container">
+                        <div class="card-description-title-container">
+                            <p class="title-font"><b>La San Juan Fútbol 5</b></p>
+                        </div>
+                        <div class="card-description-rate-container">
+                            <div><i class="fa-sharp fa-solid fa-star fa-2xl" style="color: #fff700;"></i></div>
+                            <div><i class="fa-sharp fa-solid fa-star fa-2xl" style="color: #fff700;"></i></div>
+                            <div><i class="fa-sharp fa-solid fa-star fa-2xl" style="color: #fff700;"></i></div>
+                            <div><i class="fa-sharp fa-solid fa-star fa-2xl" style="color: #fff700;"></i></div>
+                            <div><i class="fa-sharp fa-regular fa-star fa-2xl" style="color: #fff700;"></i></div>
+                        </div>
+                        <div class="card-description-sports-container">
+                            <p class="text-font">Fútbol 5, Fútbol 7</p>
+                        </div>
+                        <div class="card-description-phone-container">
+                            <div><i class="fa-solid fa-phone" style="color: #ffffff;"></i></div>
+                            <div>
+                                <p class="text-font">381-679569</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-map-button-container">
+                        <div>
+                            <div class="map-container">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.7453078120884!2d-65.25028992360927!3d-26.816237189181624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225cfa160b4ce5%3A0x104d62bd1af53f7d!2sLa%20San%20Juan%20F%C3%BAtbol%205!5e0!3m2!1ses!2sar!4v1685451946631!5m2!1ses!2sar"
+                                    style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="button-container">
+                                <div class="button-text-container">
+                                    <p class="title-font"><b><a class="button-text-container" href="">RESERVAR</a></b></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bookings-card-container">
+                    <div class="card-picture-2-container"></div>
+                    <div class="card-description-container">
+                        <div class="card-description-title-container">
+                            <p class="title-font"><b>La Cañada Fútbol 5</b></p>
+                        </div>
+                        <div class="card-description-rate-container">
+                            <div><i class="fa-sharp fa-solid fa-star fa-2xl" style="color: #fff700;"></i></div>
+                            <div><i class="fa-sharp fa-solid fa-star fa-2xl" style="color: #fff700;"></i></div>
+                            <div><i class="fa-sharp fa-solid fa-star fa-2xl" style="color: #fff700;"></i></div>
+                            <div><i class="fa-sharp fa-solid fa-star fa-2xl" style="color: #fff700;"></i></div>
+                            <div><i class="fa-sharp fa-solid fa-star fa-2xl" style="color: #fff700;"></i></div>
+                        </div>
+                        <div class="card-description-sports-container">
+                            <p class="text-font">Fútbol 5, Fútbol 7</p>
+                        </div>
+                        <div class="card-description-phone-container">
+                            <div><i class="fa-solid fa-phone" style="color: #ffffff;"></i></div>
+                            <div>
+                                <p class="text-font">381-693358</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-map-button-container">
+                        <div>
+                            <div class="map-container">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28481.480040166298!2d-65.2963153!3d-26.8340674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942243376a730e3b%3A0xc1324fb9fe456f75!2zTGEgQ2HDsWFkYSBGw7p0Ym9sIDU!5e0!3m2!1ses-419!2sar!4v1685458352569!5m2!1ses-419!2sar"
+                                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="button-container">
+                                <div class="button-text-container">
+                                    <p class="title-font"><b><a class="button-text-container" href="">RESERVAR</a></b></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bookings-card-container">
+                    <div class="card-picture-3-container"></div>
+                    <div class="card-description-container">
+                        <div class="card-description-title-container">
+                            <p class="title-font"><b>Club Las Lomitas</b></p>
+                        </div>
+                        <div class="card-description-rate-container">
+                            <div><i class="fa-sharp fa-solid fa-star fa-2xl" style="color: #fff700;"></i></div>
+                            <div><i class="fa-sharp fa-solid fa-star fa-2xl" style="color: #fff700;"></i></div>
+                            <div><i class="fa-sharp fa-solid fa-star fa-2xl" style="color: #fff700;"></i></div>
+                            <div><i class="fa-sharp fa-solid fa-star fa-2xl" style="color: #fff700;"></i></div>
+                            <div><i class="fa-sharp fa-regular fa-star fa-2xl" style="color: #fff700;"></i></div>
+                        </div>
+                        <div class="card-description-sports-container">
+                            <p class="text-font">Tenis</p>
+                        </div>
+                        <div class="card-description-phone-container">
+                            <div><i class="fa-solid fa-phone" style="color: #ffffff;"></i></div>
+                            <div>
+                                <p class="text-font">381-528415</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-map-button-container">
+                        <div>
+                            <div class="map-container">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3561.0363210764876!2d-65.3169142!3d-26.8069721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942242ef18afa675%3A0xe44c3300edb1bdd2!2sClub%20Las%20Lomitas!5e0!3m2!1ses-419!2sar!4v1685458607941!5m2!1ses-419!2sar"
+                                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="button-container">
+                                <div class="button-text-container">
+                                    <p class="title-font"><b><a class="button-text-container" href="">RESERVAR</a></b></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="separator-container-2">
+            <div class="separator-color-1"></div>
+            <div class="separator-color-2"></div>
+            <div class="separator-color-1"></div>
+            <div class="separator-color-2"></div>
+        </div>
+        <div class="footer-container">
+            <div class="footer-section-1-container">
+                <div class="footer-logo-container"><img src="Images/logo blanco sin fondo.png" alt="SPORTRENT logo"></div>               
+            </div>
+            <div class="footer-section-2-container">
+                <div class="footer-adress-title-container">
+                    <p class="title-font"><b>Dirección</b></p>
+                </div>
+                <div class="footer-adress-text-container">
+                    <p class="text-font">Charchas 247</p>
+                </div>
+                <div class="footer-attention-schedule-title-container">
+                    <p class="title-font"><b>Horarios de atención</b></p>
+                </div>
+                <div class="footer-attention-schedule-text-1-container">
+                    <p class="text-font">
+                        Lunes a Viernes: 8:00 AM a 13:00 PM - 16:00 PM a 22:00 PM
+                    </p>
+                </div>
+                <div class="footer-attention-schedule-text-2-container">
+                    <p class="text-font">
+                        Sábado: 9:00 AM a 12:30 PM - 15:00 PM a 17:00 PM
+                    </p>
+                </div>
+            </div>
+            <div class="footer-section-3-container">
+                <div class="footer-social-facebook-container">
+                    <i class="fi fi-brands-facebook"></i><p class="title-font"></i><b><a class="footer-social-facebook-container" href="">Facebook</a></b></p>
+                </div>
+                <div class="footer-social-instagram-container">
+                    <i class="fi fi-brands-instagram"></i><p class="title-font"><b><a class="footer-social-instagram-container" href="">Instagram</a></b></p>
+                </div>
+                <div class="footer-social-twitter-container">
+                    <i class="fi fi-brands-twitter"></i><p class="title-font"><b><a class="footer-social-twitter-container" href="">Twitter</a></b></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

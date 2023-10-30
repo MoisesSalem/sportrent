@@ -1,0 +1,128 @@
+.menu-container {
+    height: auto;
+    display: grid;
+    grid-template-areas: 'home bookings contact about-us responsive';
+    grid-template-columns: repeat(4, 1fr);
+    grid-area: menu;
+    background-color: #333333;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+}
+
+.menu-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+.home-container{
+    
+    grid-area: home;
+    
+}
+
+.home-title-container {
+    text-decoration: none;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+
+.bookings-container {
+    grid-area: bookings;
+}
+
+.bookings-title-container {
+    text-decoration: none;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.contact-container {
+    grid-area: contact;
+}
+
+.contact-title-container {
+    text-decoration: none;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.about-us-container {
+    grid-area: about-us;
+}
+
+.about-us-title-container {
+    text-decoration: none;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+div.active,
+div.menu-link:hover {
+    background-color: #69b60c;
+    transition: .5s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: #ffffff;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 768px){
+
+    .menu-container{
+        height: auto;
+        width: 100%;
+    }
+
+    .home-title-container, .about-us-title-container, .bookings-title-container, .contact-title-container{
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .menu-container {
+        display: flex;
+        flex-direction: column;
+        width: 110%;
+        height: auto;
+        background-color: #333333;
+    }
+
+    .checkbtn {
+        display: block;
+    }
+
+    .home-container,
+    .bookings-container,
+    .contact-container,
+    .about-us-container {
+        display: none;
+    }
+
+    #check:checked~.home-container,
+    #check:checked~.bookings-container,
+    #check:checked~.contact-container,
+    #check:checked~.about-us-container {
+        display: block;
+        width: 110%;
+        margin-top: -5px;
+    }
+
+}
+
