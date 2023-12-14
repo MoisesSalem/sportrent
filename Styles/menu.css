@@ -1,8 +1,8 @@
 .menu-container {
     height: auto;
     display: grid;
-    grid-template-areas: 'home bookings contact about-us responsive';
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 'home bookings contact about-us manage-reservations';
+    grid-template-columns: repeat(5, 1fr);
     grid-area: menu;
     background-color: #333333;
     align-items: center;
@@ -19,7 +19,9 @@
     cursor: pointer;
     pointer-events: auto;
 }
-
+.admin-link{
+    background-color: #c77e12;
+}
 .home-container{
     
     grid-area: home;
@@ -62,11 +64,19 @@
     font-size: 20px;
     color: #ffffff;
 }
-
+.manage-reservations-title-container{
+    text-decoration: none;
+    font-size: 20px;
+    color: #ffffff; 
+}
 div.active,
 div.menu-link:hover {
     background-color: #69b60c;
     transition: .5s;
+}
+
+.manage-reservations-container{
+    grid-area: manage-reservations;
 }
 
 .checkbtn {
