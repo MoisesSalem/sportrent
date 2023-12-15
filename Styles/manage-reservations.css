@@ -16,8 +16,7 @@ body {
     grid-template-areas: 'menu menu menu'
                          'banner banner banner'
                          'separator separator separator'
-                         'table table table'
-                         'modify modify modify'
+                         'divisor divisor divisor'
                          'separator-2 separator-2 separator-2'
                          'footer footer footer';
 }
@@ -40,15 +39,56 @@ body {
     font-size: 90px;
 }
 
-.tabla{
-    grid-area: table;
-}
-
-.modify{
-    grid-area: modify;
-}
-
 .custom-footer{
     grid-area: footer;
     width: 100.6%;
+}
+
+.divisor{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-area: divisor;
+    color:#ffffff;
+}
+
+.divisor a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.divisor-list{
+    position: relative;
+    display: flex;
+    background-image: url(Styles-Images/divisor-list.JPG);
+    filter:brightness(0.7);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease;
+}
+
+.divisor-list:hover{   
+    filter:brightness(1);
+    color:#69b60c;  
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.divisor-modify{
+    display: flex;
+    background-image: url(Styles-Images/divisor-modify.jpg);
+    filter:brightness(0.7);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease;
+}
+
+.divisor-modify:hover{
+    filter:brightness(1);  
+    color:#69b60c; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
