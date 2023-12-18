@@ -51,3 +51,8 @@ function kelvinToCentigrade(temp){
   var centigrade = temp - 273.15;
   return centigrade.toFixed(0);
 }
+
+function datos(nombreCancha, tipo) {
+  sessionStorage.setItem('nombreCancha', nombreCancha);
+  sessionStorage.setItem('tipo', tipo);
+}
